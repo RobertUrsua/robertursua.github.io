@@ -31,6 +31,7 @@ h6 {
   font-weight: 700;
 }
 hr.star-light,
+hr.star-lighter,
 hr.star-primary {
   padding: 0;
   border: none;
@@ -40,6 +41,7 @@ hr.star-primary {
   margin: 25px auto 30px;
 }
 hr.star-light:after,
+hr.star-lighter:after,
 hr.star-primary:after {
   content: "\f005";
   font-family: FontAwesome;
@@ -62,6 +64,13 @@ hr.star-primary {
 hr.star-primary:after {
   background-color: white;
   color: #2C3E50;
+}
+hr.star-lighter {
+  border-color: white;
+}
+hr.star-lighter:after {
+  background-color: #2C3E50;
+  color: white;
 }
 .img-centered {
   margin: 0 auto;
