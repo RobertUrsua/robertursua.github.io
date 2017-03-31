@@ -2,3 +2,6 @@
   font-size: 1.0em;
   font-weight: 300;
 }
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
