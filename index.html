@@ -87,7 +87,9 @@
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
+     
+
+    <!-- Portfolio Grid Section -->	
     <section id="portfolio">
         <div class="container">
             <div class="row">
@@ -175,7 +177,7 @@
                     <p>Hi, I'm Robert and I'm an Electrical Engineering Junior at UCLA. I love working on robots, electronics, and all kinds of software projects. I've designed and built soccer robots, hand-held gaming devices, line following/ stair climbing robots, sumo robots, maze solving robots, turn-by-turn navigation systems, useful browser extensions, and more!</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>I am passionate about technology, and I strive to explore the best ways of using engineering to solve problems and improve people's lives.  </p>
+                    <p>I am passionate about technology and believe that it has the power to enrich lives and lift communities out of poverty. I strive to learn about the best ways of using engineering to address problems. Working towards this goal, I seek feedback in everything that I do, and commit to being a life long learner.</p>
                 </div>
             </div>
         </div>
@@ -249,7 +251,54 @@
                         <div class="modal-body">
                             <h2>MicroMouse</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/mouse.png" class="img-responsive img-centered" alt="MicroMouse">
+							<!-- Carousel
+						    ================================================== -->
+						    <div id="portModCar1" class="carousel slide" data-ride="carousel">
+						      <!-- Indicators -->
+						      <ol class="carousel-indicators">
+						        <li data-target="#portModCar1" data-slide-to="0" class="active"></li>
+						        <li data-target="#portModCar1" data-slide-to="1"></li>
+						        <li data-target="#portModCar1" data-slide-to="2"></li>
+						      </ol>
+						      <div class="carousel-inner" role="listbox">
+						        <div class="item active">
+						          <img class="first-slide" src="img/portfolio/mouse.png" alt="First slide">
+						          <div class="container">
+						           
+						          </div>
+						        </div>
+						        <div class="item">
+						          <img class="second-slide" src="img/portfolio/pcb1.png" alt="Second slide">
+						          <div class="container">
+						            <div class="carousel-caption">
+						              <p>First Circuit Board (uses NUCLEO F411RE). Assembled version shown in previous slide</p>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="item">
+						          <img class="third-slide" src="img/portfolio/pcb2.png" alt="Third slide">
+						          <div class="container">
+						            <div class="carousel-caption">
+						              <p>Improved Circuit Board (uses bare STM32F405 MCU)</p>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						      <a class="left carousel-control" href="#portModCar1" role="button" data-slide="prev">
+						        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						        <span class="sr-only">Previous</span>
+						      </a>
+						      <a class="right carousel-control" href="#portModCar1" role="button" data-slide="next">
+						        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						        <span class="sr-only">Next</span>
+						      </a>
+						    </div><!-- /.carousel -->	
+
+						    <!-- Links under the pics -->
+                            <p class="portfolio-modal-links"> 
+                            <a href="http://i.imgur.com/cgaw47U.png" target="_blank"> Schematic </a> 
+                            </p>
+
                             <p>As a team, we built a robot that finds the fastest route in a maze (see <a href="https://en.wikipedia.org/wiki/Micromouse" target="_blank">Micromouse</a>). I used
                             embedded C/C++ to implement the software for motor control, sensor processing, and maze solving. I also assisted in designing the circuit board and in looking for and picking optimal parts. Our team won first place in UCLA's internal club competition.</p>
                             <ul class="list-inline item-details">
@@ -283,7 +332,46 @@
                         <div class="modal-body">
                             <h2>UCLA BruinWalk Easy Access</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/bwalk.png" class="img-responsive img-centered" alt="BruinWalk">
+                            <div id="portModCar2" class="carousel slide" data-ride="carousel">
+						      <!-- Indicators -->
+						      <ol class="carousel-indicators">
+						        <li data-target="#portModCar2" data-slide-to="0" class="active"></li>
+						        <li data-target="#portModCar2" data-slide-to="1"></li>
+						        <li data-target="#portModCar2" data-slide-to="2"></li>
+						      </ol>
+						      <div class="carousel-inner" role="listbox">
+						        <div class="item active">
+						          <img class="first-slide" src="img/portfolio/bwalk.png" alt="First slide">
+						          <div class="container">
+						           
+						          </div>
+						        </div>
+						        <div class="item">
+						          <img class="second-slide" src="img/portfolio/bwalkpic1.png" alt="Second slide">
+						          <div class="container">
+						            <div class="carousel-caption">
+						              <p>Detailed popup for each instructor</p>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="item">
+						          <img class="third-slide" src="img/portfolio/bwalkpic2.png" alt="Third slide">
+						          <div class="container">
+						            <div class="carousel-caption">
+						              <p>List of classes with instructor ratings</p>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						      <a class="left carousel-control" href="#portModCar2" role="button" data-slide="prev">
+						        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						        <span class="sr-only">Previous</span>
+						      </a>
+						      <a class="right carousel-control" href="#portModCar2" role="button" data-slide="next">
+						        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						        <span class="sr-only">Next</span>
+						      </a>
+						    </div><!-- /.carousel -->	
 
                             <p class="portfolio-modal-links">
                             <a href="https://github.com/RobertUrsua/BruinWalkChromeExtension" target="_blank">Github</a> - 
@@ -366,11 +454,62 @@
                         <div class="modal-body">
                             <h2>Music Visualizer</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/musvis.png" class="img-responsive img-centered" alt="Music Visualizer">
+                            <!-- Carousel
+						    ================================================== -->
+						    <div id="portModCar4" class="carousel slide" data-ride="carousel">
+						      <!-- Indicators -->
+						      <ol class="carousel-indicators">
+						        <li data-target="#portModCar4" data-slide-to="0" class="active"></li>
+						        <li data-target="#portModCar4" data-slide-to="1"></li>
+						        <li data-target="#portModCar4" data-slide-to="2"></li>
+						        <li data-target="#portModCar4" data-slide-to="3	"></li>
+						      </ol>
+						      <div class="carousel-inner" role="listbox">
+						        <div class="item active">
+						          <img class="first-slide" src="img/portfolio/musvis.png" alt="First slide">
+						          <div class="container">
+						           
+						          </div>
+						        </div>
+						        <div class="item">
+						          <img class="second-slide" src="img/portfolio/musvispic1.png" alt="Second slide">
+						          <div class="container">
+						            <div class="carousel-caption">
+						            </div>
+						          </div>
+						        </div>
+						        <div class="item">
+						          <img class="third-slide" src="img/portfolio/musvispic2.png" alt="Third slide">
+						          <div class="container">
+						            <div class="carousel-caption">
+						              <p>Circuit board</p>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="item">
+						          <img class="fourth-slide" src="img/portfolio/musvissch.png" alt="Fourth slide">
+						          <div class="container">
+						            <div class="carousel-caption">
+						              <p>A section of the schematic</p>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						      <a class="left carousel-control" href="#portModCar4" role="button" data-slide="prev">
+						        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						        <span class="sr-only">Previous</span>
+						      </a>
+						      <a class="right carousel-control" href="#portModCar4" role="button" data-slide="next">
+						        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						        <span class="sr-only">Next</span>
+						      </a>
+						    </div><!-- /.carousel -->	
 
+						    <!-- Links under the pics -->
                             <p class="portfolio-modal-links">
                             <a href="https://github.com/RobertUrsua/ArduinoMusicVisualizer" target="_blank">Github</a> - 
-                            <a href="http://i.imgur.com/Q5eele1.png" target="_blank"> Schematic </a>
+                            <a href="http://i.imgur.com/Q5eele1.png" target="_blank"> Schematic </a> -
+                            <a href="https://www.youtube.com/watch?v=iWEHxa215bw" target="_blank"> Video of Operation </a>
                             </p>
 
                             <p>I created an Arduino operated device that takes input via 3.5mm audio jack and creates a light show using an LED matrix. I designed and soldered the circuit board, and I wrote the Arduino code for multiplexing the LED Matrix. </p>
@@ -411,7 +550,37 @@
                         <div class="modal-body">
                             <h2>Bugs</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/ants.png" class="img-responsive img-centered" alt="">
+                            <div id="portModCar5" class="carousel slide" data-ride="carousel">
+						      <!-- Indicators -->
+						      <ol class="carousel-indicators">
+						        <li data-target="#portModCar5" data-slide-to="0" class="active"></li>
+						        <li data-target="#portModCar5" data-slide-to="1"></li>
+						      </ol>
+						      <div class="carousel-inner" role="listbox">
+						        <div class="item active">
+						          <img class="first-slide" src="img/portfolio/ants.png" alt="First slide">
+						          <div class="container">
+						           
+						          </div>
+						        </div>
+						        <div class="item">
+						          <img class="second-slide" src="img/portfolio/antspic1.png" alt="Second slide">
+						          <div class="container">
+						            <div class="carousel-caption">
+						              <p>The ants playing field</p>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						      <a class="left carousel-control" href="#portModCar5" role="button" data-slide="prev">
+						        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						        <span class="sr-only">Previous</span>
+						      </a>
+						      <a class="right carousel-control" href="#portModCar5" role="button" data-slide="next">
+						        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						        <span class="sr-only">Next</span>
+						      </a>
+						    </div><!-- /.carousel -->	
 
                             <p class="portfolio-modal-links">
                             <a href="https://github.com/RobertUrsua/CS32_WIN17/tree/master/project3%20-%20Bugs!" target="_blank">Github</a> - 
