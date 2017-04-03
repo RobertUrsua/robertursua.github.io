@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 .portfolio-modal .modal-content .modal-body .portfolio-modal-links{
   font-size: 1.0em;
   font-weight: 300;
 }
 .carousel-control.left, .carousel-control.right {
     background-image: none
+=======
+.portfolio-modal .modal-content .modal-body .portfolio-modal-links{
+  font-size: 1.0em;
+  font-weight: 300;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+>>>>>>> 56c1426c52a512d9bd7d184ee4cd24cc477d48c1
 }
